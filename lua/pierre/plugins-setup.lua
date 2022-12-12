@@ -100,8 +100,13 @@ return packer.startup(function(use)
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
+	use({ "lukas-reineke/indent-blankline.nvim" }) -- smarter indent
 	-- Colored indent
 	use("adi/vim-indent-rainbow")
+
+	-- Vim Wiki
+	use("vimwiki/vimwiki")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
