@@ -107,6 +107,9 @@ return packer.startup(function(use)
 	-- Vim Wiki
 	use("vimwiki/vimwiki")
 
+	-- Pour git dans Vim
+	use("tanvirtin/vgit.nvim")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
