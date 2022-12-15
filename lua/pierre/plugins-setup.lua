@@ -110,6 +110,9 @@ return packer.startup(function(use)
 	-- Pour git dans Vim
 	use("tanvirtin/vgit.nvim")
 
+	-- Le plugin pour apprendre les mouvements vim
+	use("ThePrimeagen/vim-be-good")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
