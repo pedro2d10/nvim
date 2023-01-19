@@ -110,6 +110,12 @@ return packer.startup(function(use)
 	-- Pour git dans Vim
 	use("tanvirtin/vgit.nvim")
 
+	use("rktjmp/lush.nvim")
+	-- Theme Bluloco
+	use({
+		"uloco/bluloco.nvim",
+		requires = { "rktjmp/lush.nvim" },
+	})
 	-- Le plugin pour apprendre les mouvements vim
 	use("ThePrimeagen/vim-be-good")
 
