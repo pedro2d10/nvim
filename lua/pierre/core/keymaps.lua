@@ -1,6 +1,5 @@
 local keymap = vim.keymap.set -- Pour la lisibilité
 
-
 vim.g.mapleader = " "
 
 -- Général Keymap
