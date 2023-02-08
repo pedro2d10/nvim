@@ -34,3 +34,11 @@ keymap("n", "<leader>fs", "<cmd>Telescope live_grep<cr>")
 keymap("n", "<leader>fc", "<cmd>Telescope grep_string<cr>")
 keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>")
 keymap("n", "<leader>fh", "<cmd>Telescope help_tags<cr>")
+
+-- Moving Lines
+keymap("n", "<A-j>", ":m .+1<CR>==")
+keymap("n", "<A-k>", ":m .-2<CR>==")
+keymap("i", "<A-j>", "<ESC>:m +1<CR>==gi")
+keymap("i", "<A-k>", "<ESC>:m -2<CR>==gi")
+keymap("v", "<A-j>", ":m '>+1<CR>gv=gv")
+keymap("v", "<A-k>", ":m '<-2<CR>gv=gv")
