@@ -119,6 +119,12 @@ return packer.startup(function(use)
 	-- Le plugin pour apprendre les mouvements vim
 	use("ThePrimeagen/vim-be-good")
 
+	-- Un nouveau color Theme compatible Tmux
+	use("catppuccin/vim")
+
+	-- Plugin to liveview MarkDown
+	use("shime/vim-livedown")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
